@@ -21,7 +21,7 @@ public class MainActivity extends Activity {
         FragmentManager fragmentManager =getFragmentManager();
         FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
         Fragment_a fragment_a = new Fragment_a();
-        fragmentTransaction.add(android.R.id.content, fragment_a).commit();
+        //fragmentTransaction.add(android.R.id.content, fragment_a).commit();
         
         Button pressme =(Button) findViewById(R.id.bPressme);
         
