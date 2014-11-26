@@ -8,14 +8,15 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     android:background="@color/blue"
     tools:context="com.Blackrondonapps.staticfragments.MainActivity" >
-  
+
     <Button
         android:id="@+id/bPressme"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="44dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="24dp"
         android:text="@string/sPressme" />
 
     <fragment
@@ -23,8 +24,8 @@
         android:name="com.Blackrondonapps.staticfragments.Fragment_a"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/bPressme"
-        android:layout_centerVertical="true"
-        android:layout_marginLeft="25dp" />
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/bPressme"
+        android:layout_marginTop="88dp" />
 
 </RelativeLayout>

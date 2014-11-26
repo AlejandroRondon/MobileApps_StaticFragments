@@ -1,6 +1,8 @@
 package com.Blackrondonapps.staticfragments;
 
 import android.app.Activity;
+import android.app.FragmentManager;
+import android.app.FragmentTransaction;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
@@ -15,6 +17,11 @@ public class MainActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        /*DINAMIC FRAGMENT*/
+        FragmentManager fragmentManager =getFragmentManager();
+        FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+        Fragment_a fragment_a = new Fragment_a();
+        fragmentTransaction.add(android.R.id.content, fragment_a).commit();
         
         Button pressme =(Button) findViewById(R.id.bPressme);
         
