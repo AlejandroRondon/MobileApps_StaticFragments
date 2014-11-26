@@ -7,5 +7,6 @@
     <string name="action_settings">Settings</string>
     <string name="sPressme">Press me!</string>
     <string name="tWelcome">Welcome</string>
+    <string name="sFragmentA">Fragment_A</string>
 
 </resources>

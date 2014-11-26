@@ -13,6 +13,9 @@ public class Fragment_a extends Fragment {
 			Bundle savedInstanceState) {
 		// TODO Auto-generated method stub
 		//return super.onCreateView(inflater, container, savedInstanceState);
+		return inflater.inflate(R.layout.fragment_a,container,false);
 	}
+
+
 
 }
